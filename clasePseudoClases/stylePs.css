@@ -1,0 +1,44 @@
+.main-nav{
+    margin-top: 10px;
+    list-style: none;
+    padding-left: 0px;
+    background-color: #13a4a4;
+}
+
+.main-nav_item{
+    display: inline-block;
+    
+}
+/*De esta manera le ponemos estilos a la calse y solo a la etiqueta a*/
+.main-nav_item a{
+    color: white;
+    padding: 5px;
+    border-radius: 2px;
+    text-decoration: none;
+
+}
+/*Comenzamos el uso de Pseudo clases las cuales siempre son citadas con : 
+Deﬁne el estilo de un estado especial de un elemento.*/
+.main-nav_item a:hover{ 
+    color: blue;
+}
+/*hover nos sirve para que nuestro menú de navegación se marque la letra en azul cuando ponemos
+el mouse encima de cada valor*/
+.main-nav_item a:active{
+    color: red;
+}
+/*Con active lo que hacemos es que si damos clic el texto del menú se marca en rojo*/
+
+/*Para usar Pseudo elementos debemos es llamarlos con :: y el nombre del elemento
+Deﬁne el estilo de una parte especíﬁca de un elemento.*/
+.main-nav_item a::after{
+    content: " | ";
+}
+/*con after logramos poner | después de cada campo del menú*/
+
+p{
+    color: green;
+    font-size: 35px;
+    font-family: Verdana;
+    background-color: grey;
+}

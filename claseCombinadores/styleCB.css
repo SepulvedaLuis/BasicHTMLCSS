@@ -13,7 +13,7 @@ h3 + p{
 }
 Por ejemplo en este caso le aplicamos solo estilo a la p que estaba cerca a h3*/
 
-/*Hermano general (General sibling) div ~ p { ... }*/
+/*Hermano general (General sibling) div ~ p { ... }
 
 h2 ~ p{
     color: red;
@@ -21,3 +21,29 @@ h2 ~ p{
 
 /*Lo que hacemos es que todas las etiquetas <p> que esten como hermanos general de <h2> se le
 va brindar estilos, siempre y cuando esten en la misma línea y sean hermanos generales*/
+
+/*Hijo (child) div > p { ... }
+
+div > p {
+    color: red;
+}
+
+div > article {
+    color: blue;
+}
+
+De esta manera lo que hacemos es que a la etiqueta que sea hijo de la anterior es a la que
+se le brinda el estilo, si no hace parte de los hijos no se le brinda los estilos correspondientes
+*/
+
+/*Descendiente (Descendant) div p { ... }*/
+
+div p{
+    color: red;
+}
+
+/*Este es el combinador más habitual que se utiliza, dado que es el más habitual trae su responsabilidad
+y debe ser usado de forma correcta, si deseas estiliar todas las etiquetas p que sean hijas por 
+alguna razón del div lo hacemos como indica el ejemplor, pero si quisieramos solo pintar dos 
+p que estan en las etiquetas article debemos especificar para así no afectar a los demás parrafos 
+del código*/

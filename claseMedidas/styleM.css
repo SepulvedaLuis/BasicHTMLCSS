@@ -1,0 +1,16 @@
+p {
+    font-size: 18px;
+}
+/*Sin importar el tamaño de la ventana nuestro texto va tener este tamaño y esto se conoce
+como medida absoluta*/
+
+main {
+    background-color: red;
+    width: 100%;
+    height: 500px;
+}
+/*En este caso vemos que aplicamos medidas relativas para el width y absoluta para el height.
+La diferencia notoría es que si es absoluta sim importar el tamaño de la pantalla va respetar
+las dimensiones que le indicamos y cuando usamos relativa lo que hace es que se le pregunta al
+navegador cual es su dimesión disponible y que vamos a usar en este caso el 100% de esa dimesión
+con esto evitamos el scroll*/

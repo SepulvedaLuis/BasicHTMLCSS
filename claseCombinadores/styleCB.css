@@ -1,13 +1,23 @@
+/*Hermano adyacente o cercano (Adjacent sibling) div + p { ... }
 h2 + p{
     color: red;
 }
-/*Lo que hacemos es brindarle estilos a la etiqueta p que esta cerca a la h2, cercanía
+Lo que hacemos es brindarle estilos a la etiqueta p que esta cerca a la h2, cercanía
  es que la etiqueta este una sobra la otra por ejemplo:
  <h2>  Si contamos con otro caso en el cual se interpone otra etiqueta no funciona  <h2>
  <p>   Nos referimos a que siempre después de un h2 debe estar la p o no funcionara <h3>
-                                      De esta manera no funciona nuestro combinador <p>*/
+                                      De esta manera no funciona nuestro combinador <p>
 
 h3 + p{
     color: blue;
 }
-/*Por ejemplo en este caso le aplicamos solo estilo a la p que estaba cerca a h3*/
+Por ejemplo en este caso le aplicamos solo estilo a la p que estaba cerca a h3*/
+
+/*Hermano general (General sibling) div ~ p { ... }*/
+
+h2 ~ p{
+    color: red;
+}
+
+/*Lo que hacemos es que todas las etiquetas <p> que esten como hermanos general de <h2> se le
+va brindar estilos, siempre y cuando esten en la misma línea y sean hermanos generales*/

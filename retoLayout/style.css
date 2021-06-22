@@ -8,30 +8,36 @@ html {
     font-size: 62.5%;
 }
 
-header {
+header { /*Definimos color y tamaño del header para poder logo y nav*/
     background-color: silver;
     width: 100%;
     height: 50px;
 }
 
-.logo img{
+.header-logo { 
+    display: inline-block; 
+}
+
+.header-logo img {
     width: 50px;
-    vertical-align: middle;
 }
 
 .header-nav {
-    background-color: peachpuff;
-    padding: 0;
-    list-style: none;
-    text-align: center;
-}
-
-.header-nav li {
     display: inline-block;
-    margin: 10px 0;
-    padding-left: 20px;
-    padding-right: 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
 }
+/*Organizamos el mapa de navegación a la izquierda*/
+
+.header-nav li{
+    display: inline-block;
+    padding: 0.8rem;
+    border-radius: 1rem;
+    background-color: white;
+    margin: 0rem 0.5rem;
+}
+/*Creamos el recuadro de cada item del mapa de navegación*/
 
 .header-nav a {
     text-decoration: none;
@@ -39,18 +45,48 @@ header {
     font-size: 2rem;
 }
 
-/*
-.nav {
-    background-color: peachpuff;
-    padding: 20px;
-    list-style: none;
-    text-align: center;
+.sidebar {/*organizamos el tamaño donde se va ubicar el sidebar*/
+    display: inline-block;
+    width: 30%;
+    height: 500px;
+    background-color:gainsboro;
 }
 
-.nav li {
+.sidebar div { /*Damos el tamaño a cada div de la section*/
+    width: 90%;
+    height: 100px;
+    margin: 10px auto;
+    background-color: purple;
+    position: relative;
+    top: 10px;
+    border-radius: 5px;
+}
+
+.contenido {/*Organizamos el texto que registra en el contenido*/
+    font-size: 2rem;
     display: inline-block;
-    font-size: 20px;
-    margin: 10px 0;
-    padding-left: 20px;
-    padding-right: 20px;
-}*/
+    background-color: beige;
+    position: absolute;
+}
+
+.contenido p {/*Con esto organizamos el texto del contenedor section
+    y evitamos que aparezca pegado al recuadro*/
+    padding: 10px;
+}
+
+.footer {
+    background-color: palegoldenrod;
+    height: 50px;
+}
+/*Organizamos el footer y su distribucción*/
+.footer div {
+    display: inline-block;
+    width: 49.8%;
+    text-align: center;
+    position: relative;
+    top: 10px;
+    font-size: 2rem;
+}
+/*Importante validar como se definieron las clases para saber
+como se estan utilizando en los estilos, siempre revisar
+la definición en el html*/

@@ -5,7 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clase de mostly fluid</title>
+    <!--Estamos llamando una hoja de estilo dependiendo del tamaño del navegador, es por esto que debemos
+    indicarle cual es el tamaño mínimo para usar una hoja de estilos-->
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./tablet.css" media="screen and (min-width: 600px)">
+    <link rel="stylesheet" href="./desktop.css" media="screen and (min-width: 800px)">
+    <!--Ya contamos con una hoja de estilo para cada tipo de pantalla, podemos validar cada hoja de estilo indicada
+    y la cada una cuenta con unas indicaciones diferentes, con estos utilizamos break points en nuestros estilos-->
 </head>
 <body>
     <main class="container">

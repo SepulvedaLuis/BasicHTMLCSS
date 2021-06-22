@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    background-color: purple;
+}
+
+section {
+    width: 80%;
+    min-width: 320px;
+    max-width: 500px;
+    min-height: 500px;
+    background-color: red;
+    margin: 0 auto;
+}
+
+/*Vemos el uso y los beneficios de usar adecuadamente los estilos de min  y max, ya que nos
+permite darle un manejo adecuado algún contenedor que tengamos y así comenzar a organizar 
+nuestro contenido en nuestro código*/

@@ -5,18 +5,35 @@
     
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .parent {
-    border: 2px black dotted;
-    display: inline-block;
+    border: 1px  black solid ;
+    background-color: #ccc;
+    position: relative;
+    top: 100px;
+    margin: 0 auto;
+    border-radius: 10px;
+    width: 500px;
+    padding: 4rem;
 }
+/*Estos estilos hacen parte del recuadro grande en el cual va el texto, la posición de este es
+realtiva para así poder moverlo y organizarlo a nuestra conveniencia.*/
 
-.box {
-    display: inline-block;
+.child {
+    position: absolute;
     background-color: red;
-    width: 100px;
-    height: 100px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 300px;
+    top: -30px;
+    left: 50%;
+    margin-left: -150px;
+    text-align: center;
+    padding: 1.5em;     
 }
-
-#two {
-    background-color: green;
-}
+/*Aplicamos los estilos al recuadro pequeño que pintamos de rojo, este se representa como
+hijo del recuadro grande que va de girs, lo dejamos en una position absolute para que este
+encima del recuadro con texto grande y así sobresalga.*/

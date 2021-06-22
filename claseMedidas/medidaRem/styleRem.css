@@ -1,0 +1,26 @@
+* { /*Este es nuestro selector universal*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+/*Lo recomdable es siempre que se valla usar estilos aplicar los primeros estilos a nuestra estructura
+con el selector universal y organizando el tamaño del html*/
+
+/*Con esto lo que logramos es que 1rem equivalga a 10px ya que le vamos la capacidad de tamaño
+a nuestra etiqueta html y así evitar hacer demasiados calculos al utilizar rem*/
+p {
+    font-size: 1.6rem;
+}
+
+main div {
+    font-size: 1.6rem;
+}
+
+/*Con la medida rem siempre nos basamos o nos gíamos de la dirección root de nuestro código, 
+el cual es la etiqueta html, esta es la gran diferencia con referencia a la medida em. Nuestro
+navegador por defecto siempre le pone 16px a la etiqueta html y por ende siempre 1rem equivale
+a 16px*/

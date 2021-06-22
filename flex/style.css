@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.container {/*Utilizamos display flex que nos brinda unas mejoras en el manejo
+    de contenedores, con lo que tenemos ahí podemos ver nuestros contenedores
+    organizados según las propiedades que les indiquemos y manteniendo el diseño*/
+    border: 0.3rem solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/*con flex-wrap: wrap lo que hacemos es que nuestros contenedores si reducimos el tamaño de la
+ventana estos no se desorganicen o pierdan el tamaño y lo que hacemos es que se organizar en forma
+de escalar y con justify-content podemos ir justificado los contenedores como deseemos.*/
+
+.box {
+    width: 10rem;
+    height: 10rem;
+}
+
+.box1 {
+    background-color: blue;
+}
+
+.box2 {
+    background-color: blueviolet;
+}
+
+.box3 {
+    background-color: burlywood;
+}
+
+.box4 {
+    background-color: cadetblue;
+}
+
+.box5 {
+    background-color: coral;
+}
+
+.box6 {
+    background-color: salmon;
+}

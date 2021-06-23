@@ -1,0 +1,26 @@
+/* Si dejamos estos estilos estamos quitando accesibilidad ya que estamos definiendo nuestro
+tamaño de letras de forma absoluta y no va porder ser modificada, ya que si desde el explorador
+del navegador el cual usamos hacemos crecer el tamaño de las fuentes nuestro página no lo va aceptar
+y va mantener el tamaño indicado en px
+h1 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 18px;
+} 
+*/
+
+/*Con la medida rem permitimos accesibilidad para el tamaño de la fuente ya que brindamos un
+tamaño relativo*/
+html {
+    font-size: 62.5%;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.8rem;
+}

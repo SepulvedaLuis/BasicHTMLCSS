@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase de Label, Alt y Title</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <form action="">
+            <!--Utilizando la etiqueta label para el formulario lo que generamos es más accebilidad ya que si
+            damos clic en el texto indicado nos lleva al campo del formulario-->
+            <label for="name">
+                <span>¿Cuál es tu nombre?</span>
+                <input id="name" type="text" />
+            </label>
+            <label for="staeted-stuyding">
+                <span>¿Cuando comenzaste a estudiar</span>
+                <input id="staeted-stuyding" type="date" />
+            </label>
+            <label for="time-to-study">
+                <span>¿En qué horario estudias?</span>
+                <input id="time-to-study" type="time" />
+            </label>
+        </form>
+        <section>
+            <img src="./medium.jpg" alt="Imágen de Mini-Yoda" title="Es yoda pero miniatura" />
+        </section>
+        <!--Con el atributo alt dejamos una descripción para cuando la imagen no carga o cuando se utiliza un 
+        lector de pantalla. Con el title dejamos una descripción para cuando dejamos el mouse encima del objeto
+        en este caso una imagen nos va brindar la descripción o detalles que deseemos-->
+    </main>
+</body>
+</html>

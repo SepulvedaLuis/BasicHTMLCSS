@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive en Imagénes</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <!--De esta manera hacemos que una imágen sea responsive, siempre le debemos indicar
+        media query mayor en la parte de encima y después ir descendiendo y por defecto siempre
+        recomendable poner la imágen mas pequeña preestablecida.-->
+        <picture>
+            <source media="(min-width: 1000px)" srcset="./imgs/large.jpg"> 
+            <source media="(min-width: 800px)" srcset="./imgs/medium.jpg">
+            <img src="./imgs/small.jpg" alt="Es una imágen de ejemplo">
+        </picture>
+    </main>
+</body>
+</html>

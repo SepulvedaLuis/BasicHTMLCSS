@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario</title>
+</head>
+<body>
+
+<!--    <form action="">
+        <label for="hora">
+            <span>Hora</span>
+            <input type="time" id="hora" name="hora" />
+        </label>
+        <label for="dia">
+            <span>Día</span>
+            <input type="date" id="dia" name="dia" />
+        </label>
+        <label for="semana">
+            <span>Semana</span>
+            <input type="week" id="semana" name="semana" />
+        </label>
+        <label for="mes">
+            <span>Mes</span>
+            <input type="month" id="mes" name="mes" />
+        </label>
+        <input type="submit" />
+    </form>-->
+
+    <form action="">
+        <label for="calendario">
+            <span>Calendario</span>
+            <!--siempre de los atributos for, id y name deben ser el mismo-->
+            <input type="datetime-local" id="calendario" name="calendario">
+        </label>
+        <input type="submit" />
+    </form>
+
+    <!--Creamos dos tipos de formularios en las cuales solicitamos lo mismo pero con input diferentes
+    y de diferentes formas, siempre usando la etiqueta form para comenzar, luego label, span en la cual 
+    ponemos el texto que deseamos y ya el tipo de formulario con el input-->
+</body>
+</html>

@@ -1,0 +1,43 @@
+:root {
+    --primary-color: #003476;
+    --secundary-color: #b4d2f7;
+    --header-size: 4rem;
+    --font: 1.8rem;
+}
+/*De esta manera creamos variables para ser reutilizadas por un nombre reconocible por nosotros,
+esto también nos ayuda para siempre respetar nuestra paleta de colores ya que la vamos ha
+tener ya definidad en variables*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+header { /*para usar las varibles debemos usar la palabra var(--nombreVariable)*/
+    width: 100vw;
+    height: 15vh;
+    background-color: var(--primary-color);
+}
+main {
+    width: 100vw;
+    height: 70vh;
+    font-size: var(--font);
+}
+
+h1 {
+    font-size: var(--header-size);
+}
+
+p {
+    color: var(--primary-color);
+}
+
+footer {
+    width: 100vw;
+    height: 15vh;
+    background-color: var(--secundary-color);
+}

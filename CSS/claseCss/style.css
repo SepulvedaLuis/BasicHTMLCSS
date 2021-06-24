@@ -1,0 +1,24 @@
+/*Selector se le indica a las maneras de llamar objetos del HTML para brindarle estilos*/
+p{
+    color: deeppink;
+    font-size: 30px;
+    font-family: Verdana;
+}
+/*Indicamos la etiqueta que deseamos porderloes estilos, siempre se debe indicar el nombre de 
+la etiqueta y abrir con {} y dentro de las dos llaves debemos indicar los estilos que deseamos
+poderle a la etiqueta y toda línea debe ser cerrada con ;
+color para cambiar el color de la letra, font-size para cambiar el tamaño de la letra y font-family
+para cambiar la tipografía de la letra*/
+
+/*También podemos llamar los estilos con clases definidas en las etiquetas
+class*/
+.parrafo{
+    color: blue;
+    font-size: 40px;
+}
+
+/*Otra manera es por el ID que tenga la etiqueta*/
+#texto{
+    color: orange;
+    font-size: 35px;
+}
